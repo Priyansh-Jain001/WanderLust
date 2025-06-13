@@ -1,0 +1,39 @@
+<!-- Check-in Date Modal -->
+    <div class="modal fade" id="checkinModal" tabindex="-1" aria-labelledby="checkinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkinModalLabel">Select Check-in Date</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="checkinDate" class="form-control" placeholder="Select check-in date">
+                    <p id="selectedCheckinText" class="mt-2 text-center"><b>No date selected</b></p>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary" id="nextToCheckoutBtn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Date Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Select Checkout Date</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="checkoutDate" class="form-control" placeholder="Select checkout date">
+                    <p id="selectedCheckoutText" class="mt-2 text-center"><b>No date selected</b></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="/listings/<%= data._id %>/pay"><button type="button" class="btn btn-success">Confirm Booking</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
